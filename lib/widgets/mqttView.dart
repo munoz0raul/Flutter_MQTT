@@ -160,7 +160,7 @@ class _MQTTViewState extends State<MQTTView> {
       children: <Widget>[
         Expanded(
           // ignore: deprecated_member_use
-          child: RaisedButton(
+          child: ElevatedButton(
             color: Colors.lightBlueAccent,
             child: const Text('Connect'),
             onPressed: state == MQTTAppConnectionState.disconnected
@@ -171,7 +171,7 @@ class _MQTTViewState extends State<MQTTView> {
         const SizedBox(width: 10),
         Expanded(
           // ignore: deprecated_member_use
-          child: RaisedButton(
+          child: ElevatedButton(
             color: Colors.redAccent,
             child: const Text('Disconnect'),
             onPressed: state == MQTTAppConnectionState.connected
@@ -185,7 +185,7 @@ class _MQTTViewState extends State<MQTTView> {
 
   Widget _buildSendButtonFrom(MQTTAppConnectionState state) {
     // ignore: deprecated_member_use
-    return RaisedButton(
+    return ElevatedButton(
       color: Colors.green,
       child: const Text('Send'),
       onPressed: state == MQTTAppConnectionState.connected
